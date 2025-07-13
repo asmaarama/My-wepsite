@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/بعد التعديل /img/IMG_20250713_055513.jpg">
+  <title>Step by Step</title>
+  <meta name="description" content="موقع بسيط لتعليم HTML و CSS للمبتدئين بشكل سهل وباللغة العربية.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+<style>
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  background-color: #2a9d8f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 999;
+  transition: 0.3s;
+}
+
+#backToTop:hover {
+  background-color: #21867a;
+}
+</style>
+<body>
+  
+  
+  
+  
+  
+  
+  <header>
+    <h1>Step by Step</h1>
+    <p>دروس مبسطة في HTML وCSS</p>
+    <nav>
+      <a href="#html-intro">HTML</a> |
+      <a href="#html-elements">عناصر HTML</a> |
+      <a href="#css-intro">CSS</a> |
+      <a href="#css-writing">طرق كتابة CSS</a> |
+      <a href="#css-elements">عناصر CSS</a>
+    </nav>
+  </header>
+
+  <section>
+    <div class="lesson" id="html-intro">
+      <h2>ما هو HTML؟</h2>
+      <p>
+        1- هي اختصار لـ HyperText Markup Language<br>
+        2- HTML هي اللغة الأساسية لإنشاء صفحات الويب. تتكوّن من عناصر تُستخدم لبناء هيكل الصفحة مثل العناوين، الفقرات، الصور والروابط.<br>
+        3- HTML ليست لغة برمجة بل لغة توصيف تُستخدم لبناء هيكل صفحة الويب.
+      </p>
+    </div>
+
+    <div class="lesson" id="html-elements">
+      <h2>العناصر الأساسية في صفحة HTML</h2>
+      <!-- الجدول الأول هنا -->
+      <!-- ... (تم اختصاره لتوفير المساحة) ... -->
+      <table>
+    <thead>
+      <tr>
+        <th>العنصر</th>
+        <th>الوظيفة</th>
+        <th>مثال</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="tag">&lt;!DOCTYPE html&gt;</span></td>
+        <td>تعريف نوع المستند (HTML5)</td>
+        <td><span class="tag">&lt;!DOCTYPE html&gt;</span></td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;html&gt;</span></td>
+        <td>يحتوي على كل عناصر الصفحة</td>
+        <td><span class="tag">&lt;html&gt; ... &lt;/html&gt;</span></td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;head&gt;</span></td>
+        <td>معلومات خلف الكواليس (عنوان، وصف، روابط)</td>
+        <td><span class="tag">&lt;head&gt; ... &lt;/head&gt;</span></td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;title&gt;</span></td>
+        <td>عنوان الصفحة في المتصفح</td>
+        <td><span class="tag">&lt;title&gt;موقعي&lt;/title&gt;</span></td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;body&gt;</span></td>
+        <td>المحتوى الظاهر للمستخدم</td>
+        <td><span class="tag">&lt;body&gt; ... &lt;/body&gt;</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+      
+      
+    </div>
+    <div class="lesson" id="html-elements">
+      <h2>
+        بعض عناصر ال HTML:
+        </h2>
+      <table>
+    <thead>
+      <tr>
+        <th>العنصر</th>
+        <th>الوظيفة</th>
+        <th>مثال</th>
+      </tr>
+    </thead>
+    <tbody>
+  
+      <tr><td class="tag">&lt;h1&gt; - &lt;h6&gt;</td><td>عناوين</td><td class="tag">&lt;h1&gt;عنوان&lt;/h1&gt;</td></tr>
+      <tr><td class="tag">&lt;p&gt;</td><td>فقرة نصية</td><td class="tag">&lt;p&gt;نص&lt;/p&gt;</td></tr>
+      <tr><td class="tag">&lt;a&gt;</td><td>رابط</td><td class="tag">&lt;a href="#"&gt;اضغط هنا&lt;/a&gt;</td></tr>
+      <tr><td class="tag">&lt;img&gt;</td><td>صورة</td><td class="tag">&lt;img src="x.jpg" alt=""&gt;</td></tr>
+      <tr><td class="tag">&lt;br&gt;</td><td>سطر جديد</td><td class="tag">&lt;br&gt;</td></tr>
+      <tr><td class="tag">&lt;hr&gt;</td><td>فاصل خطي</td><td class="tag">&lt;hr&gt;</td></tr>
+      <tr><td class="tag">&lt;strong&gt;</td><td>نص غامق</td><td class="tag">&lt;strong&gt;هام&lt;/strong&gt;</td></tr>
+      <tr><td class="tag">&lt;em&gt;</td><td>نص مائل</td><td class="tag">&lt;em&gt;مائل&lt;/em&gt;</td></tr>
+      <tr><td class="tag">&lt;ul&gt;</td><td>قائمة غير مرتبة</td><td class="tag">&lt;ul&gt;&lt;li&gt;عنصر&lt;/li&gt;&lt;/ul&gt;</td></tr>
+      <tr><td class="tag">&lt;ol&gt;</td><td>قائمة مرتبة</td><td class="tag">&lt;ol&gt;&lt;li&gt;عنصر&lt;/li&gt;&lt;/ol&gt;</td></tr>
+      <tr><td class="tag">&lt;li&gt;</td><td>عنصر قائمة</td><td class="tag">&lt;li&gt;نقطة&lt;/li&gt;</td></tr>
+      <tr><td class="tag">&lt;table&gt;</td><td>جدول</td><td class="tag">&lt;table&gt;...&lt;/table&gt;</td></tr>
+      <tr><td class="tag">&lt;tr&gt;</td><td>صف في جدول</td><td class="tag">&lt;tr&gt;...&lt;/tr&gt;</td></tr>
+      <tr><td class="tag">&lt;td&gt;</td><td>خلية جدول</td><td class="tag">&lt;td&gt;نص&lt;/td&gt;</td></tr>
+      <tr><td class="tag">&lt;th&gt;</td><td>عنوان خلية</td><td class="tag">&lt;th&gt;عنوان&lt;/th&gt;</td></tr>
+      <tr><td class="tag">&lt;div&gt;</td><td>حاوية عامة</td><td class="tag">&lt;div&gt;محتوى&lt;/div&gt;</td></tr>
+      <tr><td class="tag">&lt;span&gt;</td><td>نص داخل سطر</td><td class="tag">&lt;span&gt;كلمة&lt;/span&gt;</td></tr>
+      <tr><td class="tag">&lt;form&gt;</td><td>نموذج إدخال</td><td class="tag">&lt;form&gt;...&lt;/form&gt;</td></tr>
+      <tr><td class="tag">&lt;input&gt;</td><td>حقل إدخال</td><td class="tag">&lt;input type="text"&gt;</td></tr>
+      <tr><td class="tag">&lt;label&gt;</td><td>وصف حقل</td><td class="tag">&lt;label&gt;الاسم&lt;/label&gt;</td></tr>
+      <tr><td class="tag">&lt;button&gt;</td><td>زر</td><td class="tag">&lt;button&gt;اضغط&lt;/button&gt;</td></tr>
+      <tr><td class="tag">&lt;textarea&gt;</td><td>صندوق نص</td><td class="tag">&lt;textarea&gt;&lt;/textarea&gt;</td></tr>
+      <tr><td class="tag">&lt;select&gt;</td><td>قائمة اختيار</td><td class="tag">&lt;select&gt;&lt;option&gt;&lt;/option&gt;&lt;/select&gt;</td></tr>
+      <tr><td class="tag">&lt;option&gt;</td><td>عنصر منسدلة</td><td class="tag">&lt;option&gt;اختيار&lt;/option&gt;</td></tr>
+      <tr><td class="tag">&lt;iframe&gt;</td><td>إطار مضمّن</td><td class="tag">&lt;iframe src="x.html"&gt;&lt;/iframe&gt;</td></tr>
+      <tr><td class="tag">&lt;script&gt;</td><td>كود JavaScript</td><td class="tag">&lt;script&gt;...&lt;/script&gt;</td></tr>
+      <tr><td class="tag">&lt;link&gt;</td><td>ربط ملف خارجي</td><td class="tag">&lt;link rel="stylesheet" href="style.css"&gt;</td></tr>
+      <tr><td class="tag">&lt;style&gt;</td><td>CSS داخل الصفحة</td><td class="tag">&lt;style&gt;...&lt;/style&gt;</td></tr>
+      <tr><td class="tag">&lt;nav&gt;</td><td>قائمة تنقل</td><td class="tag">&lt;nav&gt;روابط&lt;/nav&gt;</td></tr>
+      <tr><td class="tag">&lt;header&gt;</td><td>رأس الصفحة</td><td class="tag">&lt;header&gt;...&lt;/header&gt;</td></tr>
+      <tr><td class="tag">&lt;footer&gt;</td><td>تذييل الصفحة</td><td class="tag">&lt;footer&gt;...&lt;/footer&gt;</td></tr>
+      <tr><td class="tag">&lt;section&gt;</td><td>قسم محتوى</td><td class="tag">&lt;section&gt;...&lt;/section&gt;</td></tr>
+      <tr><td class="tag">&lt;article&gt;</td><td>مقال أو محتوى مستقل</td><td class="tag">&lt;article&gt;...&lt;/article&gt;</td></tr>
+      <tr><td class="tag">&lt;aside&gt;</td><td>محتوى جانبي</td><td class="tag">&lt;aside&gt;معلومة جانبية&lt;/aside&gt;</td></tr>
+      <tr><td class="tag">&lt;audio&gt;</td><td>تشغيل صوت</td><td class="tag">&lt;audio controls&gt;&lt;/audio&gt;</td></tr>
+      <tr><td class="tag">&lt;video&gt;</td><td>تشغيل فيديو</td><td class="tag">&lt;video controls&gt;&lt;/video&gt;</td></tr>
+    </tbody>
+  </table>
+    </div>
+
+    <div class="lesson" id="css-intro">
+      <h2>ما هو CSS؟</h2>
+      <p>CSS هي لغة تصميم تُستخدم لتنسيق مظهر صفحات الويب مثل الألوان، الخطوط، المسافات، وتوزيع العناصر.</p>
+    </div>
+
+    <div class="lesson" id="css-writing">
+      <h2>طرق كتابة CSS</h2>
+      <table>
+        <tr>
+          <th>الطريقة</th>
+          <th>الشرح</th>
+          <th>مثال</th>
+        </tr>
+        <tr>
+          <td>CSS خارجي</td>
+          <td>يتم ربط ملف CSS خارجي باستخدام &lt;link&gt; داخل &lt;head&gt;.</td>
+          <td><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></td>
+        </tr>
+        <tr>
+          <td>CSS داخلي</td>
+          <td>كتابة الأكواد داخل وسم &lt;style&gt; في رأس الصفحة.</td>
+          <td><code>&lt;style&gt; h1 { color: red; } &lt;/style&gt;</code></td>
+        </tr>
+        <tr>
+          <td>CSS مباشر</td>
+          <td>كتابة الخصائص مباشرة داخل الوسم.</td>
+          <td><code>&lt;h1 style="color: green;"&gt;مرحبا&lt;/h1&gt;</code></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="lesson" id="css-elements">
+      <!-- جدول عناصر CSS هنا -->
+      <!-- ... (تم اختصاره لتوفير المساحة) ... -->
+      
+      
+
+  <h2>📋 عناصر CSS الأساسية:</h2>
+  <table>
+    <tr>
+      <th>العنصر</th>
+      <th>الوصف</th>
+      <th>مثال</th>
+    </tr>
+    <tr><td>color</td><td>تغيير لون النص</td><td><code>color: red;</code></td></tr>
+    <tr><td>background-color</td><td>لون الخلفية</td><td><code>background-color: yellow;</code></td></tr>
+    <tr><td>font-size</td><td>حجم الخط</td><td><code>font-size: 20px;</code></td></tr>
+    <tr><td>font-family</td><td>نوع الخط</td><td><code>font-family: Arial;</code></td></tr>
+    <tr><td>text-align</td><td>محاذاة النص</td><td><code>text-align: center;</code></td></tr>
+    <tr><td>border</td><td>حدود حول العنصر</td><td><code>border: 1px solid black;</code></td></tr>
+    <tr><td>padding</td><td>المسافة داخل العنصر</td><td><code>padding: 10px;</code></td></tr>
+    <tr><td>margin</td><td>المسافة خارج العنصر</td><td><code>margin: 20px;</code></td></tr>
+    <tr><td>width / height</td><td>العرض والارتفاع</td><td><code>width: 100%; height: 300px;</code></td></tr>
+    <tr><td>display</td><td>طريقة عرض العنصر</td><td><code>display: flex;</code></td></tr>
+    <tr><td>position</td><td>تحديد موقع العنصر</td><td><code>position: absolute;</code></td></tr>
+    <tr><td>top / left / right / bottom</td><td>تحديد الإزاحة من الجهات الأربع</td><td><code>top: 10px; left: 20px;</code></td></tr>
+    <tr><td>z-index</td><td>ترتيب الطبقات</td><td><code>z-index: 5;</code></td></tr>
+    <tr><td>box-shadow</td><td>ظل للصندوق</td><td><code>box-shadow: 2px 2px 5px gray;</code></td></tr>
+    <tr><td>border-radius</td><td>تدوير حواف العنصر</td><td><code>border-radius: 10px;</code></td></tr>
+    <tr><td>opacity</td><td>الشفافية</td><td><code>opacity: 0.5;</code></td></tr>
+    <tr><td>overflow</td><td>التحكم في المحتوى الزائد</td><td><code>overflow: scroll;</code></td></tr>
+    <tr><td>cursor</td><td>شكل مؤشر الماوس</td><td><code>cursor: pointer;</code></td></tr>
+    <tr><td>transition</td><td>التحكم في سرعة التأثير</td><td><code>transition: 0.3s;</code></td></tr>
+    <tr><td>text-decoration</td><td>تنسيق النص (مثل الخط تحت)</td><td><code>text-decoration: underline;</code></td></tr>
+  </table>
+    
+    </div>
+    
+  </section>
+
+  <footer>
+    &copy; 2025 - Asmaa Ramadan
+  </footer>
+  <center>
+  <button id="backToTop">⬆ رجوع لأعلى</button>
+  <script>
+  const backToTop = document.getElementById("backToTop");
+
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  };
+
+  backToTop.onclick = function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+</body>
+</html>
